@@ -8,10 +8,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // panggil routes
-
-var routes = require('./router');
+var routes = require('./routes');
 routes(app);
 
-app.listen(3000, () => {
-    console.log(`Server started on port`);
+app.listen(3001, () => {
+    console.log('Server started on port');
 });
